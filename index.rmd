@@ -1,0 +1,32 @@
+---
+title: "Test"
+author: "Will St. John"
+date: "Summer 2023"
+output: 
+    html_document:
+        toc: true
+        toc_float: true
+---
+# Section
+
+## subsection
+
+### subsubsection
+How does this look?
+
+- a bullet point
+
+> something else
+
+**something bold**
+
+*something in italic*
+
+
+```{r}
+print("hello")
+```
+
+```{python}
+print("your mom")
+```
