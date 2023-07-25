@@ -16,7 +16,29 @@ Solutions:
 - Create a reliable waterproof casing that can
   - fit in the fabric casing of a stretch chord belt
   - be easily removable
-  - 
+  - stay in-place, with minimal movement (spongey padding?)
+ 
+Ideas:
+- 3D printed case
+- vacuum seal
+- products at local stores
+- PVC
 
 ### Calibrate and convert raw data into usable/useful products
+Status: IN PROGRESS
+
+Problems:
+
+Solutions:
+
+Ideas:
+
 ### Sync and display acceleration data and video recording together
+Status: IN PROGRESS
+
+Problems:
+
+Solutions:
+
+Ideas:
+
