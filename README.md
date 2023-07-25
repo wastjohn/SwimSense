@@ -20,7 +20,7 @@ Solutions:
   - stay in-place, with minimal movement (spongey padding?)
  
 Ideas:
-- 3D printed case
+- 3D printed case, foam padding to ensure minimal movement yet snug fit
 - vacuum seal
 - products at local stores
 - PVC
