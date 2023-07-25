@@ -11,6 +11,7 @@ Status: IN PROGRESS
 
 Problems:
 - Not waterproof
+- No process for keeping accelerometer dry
 
 Solutions:
 - Create a reliable waterproof casing that can
