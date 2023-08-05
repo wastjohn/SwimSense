@@ -1,32 +1,51 @@
 ---
-title: "Test"
+title: "Swim Accelerometer Visualization"
 author: "Will St. John"
 date: "Summer 2023"
 output: 
     html_document:
-        toc: true
-        toc_float: true
+        toc: FALSE
+        toc_float: FALSE
 ---
-# Section
+## Goals
+The goal of this project is to display 4 windows:
 
-## subsection
+- Video of an accelerometer session
+- X acceleration of that accelerometer session
+- Y acceleration of that accelerometer session
+- Z acceleration of that accelerometer session
 
-### subsubsection
-How does this look?
+## Layout
+The 4 frames will have the following layout:
 
-- a bullet point
+```{python, echo=FALSE}
+temp = [
+    '______________________',
+    '|                    |',
+    '|        video       |',
+    '|____________________|',
+    '|   x  |   y  |   z  |',
+    '|______|______|______|']
+for i in temp:
+    print(i)
+```
 
-> something else
+As the video plays, the X, Y, and Z windows should display the corresponding acceleration at the given time +/- a few seconds. Since the three plots are touching, the y-axis should only be shown on the left-most pannel.
 
-**something bold**
+## Visualizations
 
-*something in italic*
+```{r, include=FALSE}
+library(ggplot2)
+library(plotly)
+```
 
 
 ```{r}
-print("hello")
+
 ```
 
-```{python}
-print("your mom")
+```{python, echo=FALSE}
+#import main
+import tkinter as tk
+
 ```
