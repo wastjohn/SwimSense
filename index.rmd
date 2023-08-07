@@ -37,11 +37,29 @@ As the video plays, the X, Y, and Z windows should display the corresponding acc
 ```{r, include=FALSE}
 library(ggplot2)
 library(plotly)
+library(htmlwidgets)
+library(lubridate)
 ```
 
 
 ```{r}
+file <- 'Rec_0614_055549_clean.txt'
+df <- read.csv(file, sep = '\t', skip = 1)
+head(df)
+df$TIME2 <- hms(df$Time)
+```
 
+```{r}
+p <- ggplot(df, aes(x = Time, y = ax)) +
+        geom_point(color = 'steelblue', size = 1) +
+        geom_line(color = 'steelblue')
+p
+```
+
+
+```{r}
+str(df$ax)
+str(df$Time)
 ```
 
 ```{python, echo=FALSE}

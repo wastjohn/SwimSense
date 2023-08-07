@@ -108,6 +108,7 @@ class viewer:
     ax = df.plot(x='Time', y=['ax'], kind='line', legend=True, grid=True, xlabel='Time', ylabel='Acceleration')
     ay = df.plot(x='Time', y=['ay'], kind='line', legend=True, grid=True, xlabel='Time', ylabel='Acceleration')
     az = df.plot(x='Time', y=['az'], kind='line', legend=True, grid=True, xlabel='Time', ylabel='Acceleration')
+    a = df.plot(x='Time', y=['ax','ay','az'], kind='line', legend=True, grid=True, xlabel='Time', ylabel='Acceleration')
 
     fig = plt.figure()
     ax = fig.add_subplot(projection='3d')
