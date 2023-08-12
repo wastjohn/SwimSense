@@ -1,5 +1,5 @@
 """
-File: main.py
+File: acc_clean.py
 
 This file contains the data cleaning scripts for the swim accelerometer project.
 
