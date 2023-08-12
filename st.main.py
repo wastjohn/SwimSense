@@ -1,6 +1,6 @@
 import streamlit as st
-import plotly.express as px
 import pandas as pd
+import plotly.express as px
 import acc_clean
 
 raw_data = 'raw_data/Rec_0811_135957.txt'
