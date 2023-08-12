@@ -1,2 +1,2 @@
-plot_ly
+plotly
 pandas
