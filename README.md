@@ -37,7 +37,5 @@ time.wait(1)
 4. If the microcontroller is successfully bootloaded and connected to your computer via USB-C, you should be able to choose a connection
 
 #### Add Microcontroller Libraries
-Go to the drive and download the following to the microcontroller’s lib directory
-- adafruit_bno08x folder
-- adafruit_sdcard.mpy file
+Download all folders and files inside this repo's `lib` folder and move them to the microcontroller's `lib` folder.
 
