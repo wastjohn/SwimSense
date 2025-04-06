@@ -18,7 +18,7 @@ Purchase all materials above.
 2. An LED on the microcontroller should light up
 3. Hold the two buttons down on the microcontroller
 4. The LED should change colors/flash and a new drive should pop up on your computer named RPI-RP2
-5. Navigate to the latest version of CircuitPython and download the .UF2 file to your computer
+5. [Navigate to the latest version of CircuitPython](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/) and download the .UF2 file to your computer
 6. Move the .UF2 file to the RPI-RP2 drive
 7. The drive should rename itself to ‘CIRCUITPY (D:)’ and a new file structure should appear, including a code.py file
 
