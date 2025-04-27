@@ -39,3 +39,9 @@ time.wait(1)
 #### Add Microcontroller Libraries
 Download all folders and files inside this repo's `lib` folder and move them to the microcontroller's `lib` folder.
 
+
+# Current Progress
+Me spinning in a chair (uncalibrated)
+![image](https://github.com/user-attachments/assets/4f031903-7a99-4918-a62b-f9f56c1d0338)
+
+
