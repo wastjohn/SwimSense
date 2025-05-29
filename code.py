@@ -57,14 +57,13 @@ def collectData():
             gyro_x, gyro_y, gyro_z = bno.gyro
             mag_x, mag_y, mag_z = bno.magnetic
             quat_i, quat_j, quat_k, quat_real = bno.quaternion
-            now = t + dt
+            now = time.monotonic()
             f.write("%0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f\n" % (now, accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z, quat_i, quat_j, quat_k, quat_real))
             led.value = True
             time.sleep(dt)
             led.value = False
-            print(now)
             t = now
-            print("saving to txt: %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f" % (now, accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z, quat_i, quat_j, quat_k, quat_real))
+            #print("saving to txt: %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f, %0.6f" % (now, accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z, quat_i, quat_j, quat_k, quat_real))
 
 
 # define the led and boot button
@@ -113,4 +112,3 @@ while True:
     collectData()
     print("Finished collecting data")
     
-
