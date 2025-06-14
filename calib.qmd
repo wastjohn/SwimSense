@@ -1,0 +1,21 @@
+---
+author: Will
+---
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+
+data <- read.csv('data/merged_data.csv')
+names(data)
+```
+
+
+```{r}
+data %>%
+    gather(key, value, ax, ay, az) %>%
+    ggplot(aes(x = t, y = value, color = key)) + 
+    geom_line() + 
+    geom_smooth()
+```
+
