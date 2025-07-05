@@ -6,7 +6,7 @@ Open-source software and hardware instructions for
 ### Materials
 - 1 x Adafruit Feather RP2040 Adalogger with Micro SD card
 - 1 x Micro SD card
-- 1 x BNO085 9-DOF Sensor
+- 1 x Adafruit MPU-6050 6-DoF Accel and Gyro Sensor - STEMMA QT Qwiic
 - 1 x Stemma QT connectors
 - 1 x USB-C to USB-C connector (for bootloading)
 
