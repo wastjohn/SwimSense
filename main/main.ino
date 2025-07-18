@@ -193,41 +193,55 @@ void loop() {
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
 
-  /* Print out the values */
-  Serial.print("ax:");
-  Serial.print(a.acceleration.x);
+  /* Print out the values to serial monitor */
+  // Serial.print("t:");
+  // Serial.print(millis());
+  // Serial.print(",");
+
+  // Serial.print("ax:");
+  // Serial.print(a.acceleration.x);
+  // Serial.print(",");
+
+  // Serial.print("ay:");
+  // Serial.print(a.acceleration.y);
+  // Serial.print(",");
+
+  // Serial.print("az:");
+  // Serial.print(a.acceleration.z);
+  // Serial.print(",");
+
+  // Serial.print("gx:");
+  // Serial.print(g.gyro.x);
+  // Serial.print(",");
+
+  // Serial.print("gy:");
+  // Serial.print(g.gyro.y);
+  // Serial.print(",");
+
+  // Serial.print("gz:");
+  // Serial.println(g.gyro.z);
+
+  /* Write out the values to the SD card */
+  
+  dataFile.print(millis());
+  dataFile.print(",");
+
   dataFile.print(a.acceleration.x);
-  Serial.print(",");
   dataFile.print(",");
 
-  Serial.print("ay:");
-  Serial.print(a.acceleration.y);
   dataFile.print(a.acceleration.y);
-  Serial.print(",");
   dataFile.print(",");
 
-  Serial.print("az:");
-  Serial.print(a.acceleration.z);
+  
   dataFile.print(a.acceleration.z);
-  Serial.print(",");
   dataFile.print(",");
 
-  Serial.print("gx:");
-  Serial.print(g.gyro.x);
   dataFile.print(g.gyro.x);
-  Serial.print(",");
   dataFile.print(",");
 
-
-  Serial.print("gy:");
-  Serial.print(g.gyro.y);
   dataFile.print(g.gyro.y);
-  Serial.print(",");
   dataFile.print(",");
 
-
-  Serial.print("gz:");
-  Serial.println(g.gyro.z);
   dataFile.println(g.gyro.z);
 
   dataFile.flush();
