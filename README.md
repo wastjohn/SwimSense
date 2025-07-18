@@ -1,47 +1,73 @@
 # SwimSense
-Open-source software and hardware instructions for 
+The goal of this project is to provide swimmers and coaches with all the resources they need to analyze their swimming technique through data. This project arose out of a desire of mine to improve my own technique, and was inspired by the work of Ken Ono and others with the University of Vrigina's Swim Team.
 
+More sophisticated products exist that allow swimmers and coaches to analyze their technique through sensors, but the products are expensive and inexcessible to most. When I was looking for products, I came across this issue, which is why I designed this project to be open-source. The materials themselves are low-cost (especially compared to current products on the market), and the assembly is simple. A full guide to get started building your own prototype is included below. If you find any issues, please create a GitHub issue and I will try and fix it as soon as I can.
 
+> NOTE: This project is under active development.
+
+# Guide
 ## Prototype
-### Materials
-- 1 x Adafruit Feather RP2040 Adalogger with Micro SD card
-- 1 x Micro SD card
-- 1 x Adafruit MPU-6050 6-DoF Accel and Gyro Sensor - STEMMA QT Qwiic
-- 1 x Stemma QT connectors
-- 1 x USB-C to USB-C connector (for bootloading)
+### Materials (Total Cost: ~$78)
+- 1 x [Adafruit Feather RP2040 Adalogger with Micro SD card](https://www.adafruit.com/product/5980) ~$15
+- 1 x [Micro SD card](https://a.co/d/egYFXCA) ~$20
+- 1 x [Adafruit MPU-6050 6-DoF Accel and Gyro Sensor - STEMMA QT Qwiic](https://www.adafruit.com/product/3886?srsltid=AfmBOopC2_q72G2jyYriWZb89m_ki3SGv5NjMLReuicTID7EJPNb-SiP) ~$13
+- 1 x [Stemma QT connectors](https://www.adafruit.com/product/4399) ~$1
+- 1 x [Lithium Ion Polymer Battery with Short Cable - 3.7V 420mAh](https://www.adafruit.com/product/4236) ~$7
+- 1 x [USB-C to USB-C connector (for bootloading)](https://a.co/d/i387Y5Y) ~$7
+- 1 x [UCO Waterproof Matchstick Case](https://a.co/d/2ja3F77) ~$6
+- 1 x [T-REX Heavy Duty Waterproof Tape](https://a.co/d/hECwmLk) ~$9
+
 
 ### Assembly and Setup
 Purchase all materials above.
 
-#### Bootload the Microcontroller/install CircuitPython
+<details>
+<summary>What did I just buy and why do I need it?</summary>
+<br>
+TODO
+</details>
+
+#### Bootload the Microcontroller
 1. Connect the microcontroller to your computer via the USB-C to USB-C cable
 2. An LED on the microcontroller should light up
 3. Hold the two buttons down on the microcontroller
 4. The LED should change colors/flash and a new drive should pop up on your computer named RPI-RP2
-5. [Navigate to the latest version of CircuitPython](https://circuitpython.org/board/adafruit_feather_rp2040_adalogger/) and download the .UF2 file to your computer
-6. Move the .UF2 file to the RPI-RP2 drive
-7. The drive should rename itself to ‘CIRCUITPY (D:)’ and a new file structure should appear, including a code.py file
 
-#### Test Python on the microcontroller
-1. Open code.py in VS Code
-2. The following code prints “hello world” every second. Copy the following code and replace the original with it in code.py
 
-```
-import time
-while True:
-print("hello world")
-time.wait(1)
-```
+<details>
+<summary>What is bootloading?</summary>
+<br>
+TODO
+</details>
 
-3. In the VS Code terminal (press CTRL+J or Command+J if not visible), navigate to the Serial Monitor tab.
-4. If the microcontroller is successfully bootloaded and connected to your computer via USB-C, you should be able to choose a connection
 
-#### Add Microcontroller Libraries
-Download all folders and files inside this repo's `lib` folder and move them to the microcontroller's `lib` folder.
+#### Download the Arduino IDE and Write the Code
+1. [Navigate to the Arduino Website](https://www.arduino.cc/en/software/) and download the most recent version of their IDE.
+2. Open the IDE.
+3. Nagivate to the Library Manager tab and download the following packages
+   1. Package 1
+   2. Package 2
+   3. Package 3 (Note: Include pictures of these steps)
+4. 
+
+<details>
+<summary>What is an IDE? Arduino?</summary>
+<br>
+TODO
+</details>
+
+
+#### Test the Sensor
+
+
+#### 3D Printed Parts
+
+#### Assemble!
 
 
 # Current Progress
-Me spinning in a chair (uncalibrated)
-![image](https://github.com/user-attachments/assets/4f031903-7a99-4918-a62b-f9f56c1d0338)
+Successfully recorded 2 swims. One is a full 25 yd swim.
+
+The other is a full 50 yd swim.
 
 
