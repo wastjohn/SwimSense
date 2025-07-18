@@ -67,7 +67,9 @@ TODO
 
 # Current Progress
 Successfully recorded 2 swims. One is a full 25 yd swim.
+<img width="1660" height="815" alt="image" src="https://github.com/user-attachments/assets/6583a266-9f53-451a-b90f-3728ab44efec" />
 
 The other is a full 50 yd swim.
+<img width="1635" height="798" alt="image" src="https://github.com/user-attachments/assets/30bd4e69-9dbf-4d43-a009-2ad09252ffe5" />
 
 
