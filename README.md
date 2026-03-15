@@ -1,5 +1,5 @@
 # SwimSense
-The goal of this project is to provide swimmers and coaches with all the resources they need to analyze their swimming technique through data. This project arose out of a desire of mine to improve my own technique, and was inspired by the work of Ken Ono and others with the University of Vrigina's Swim Team.
+The goal of this project is to provide swimmers and coaches with all the resources they need to analyze their swimming technique through data. This project arose out of a desire of mine to improve my own technique, and was inspired by the work of [Ken Ono and others with the University of Vrigina's Swim Team](https://datascience.virginia.edu/news/how-science-math-and-tech-can-propel-swimmers-new-heights).
 
 More sophisticated products exist that allow swimmers and coaches to analyze their technique through sensors, but the products are expensive and inexcessible to most. When I was looking for products, I came across this issue, which is why I designed this project to be open-source. The materials themselves are low-cost (especially compared to current products on the market), and the assembly is simple. A full guide to get started building your own prototype is included below. If you find any issues, please create a GitHub issue and I will try and fix it as soon as I can.
 
